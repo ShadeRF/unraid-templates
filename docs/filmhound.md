@@ -32,6 +32,15 @@ Movie and TV recommendations built from your Plex library and watch history. Bro
 
 Your ratings count most, then what you've watched, then what you own (adjustable). Each title in your library points to others through TMDB's recommendations; Filmhound adds a taste profile of the directors, writers, cast, keywords, genres, decades and franchises you return to, plus IMDb ratings for quality.
 
+## HTTPS
+
+Either works:
+
+- **Reverse proxy (recommended):** put the app behind Nginx Proxy Manager, SWAG, Caddy, Traefik, or `tailscale serve`, and let it handle certificates. Proxies on your own network are trusted automatically, so the app knows it's on HTTPS (sign-in cookies are then marked secure). Serve it at the root of a domain or subdomain, e.g. `https://filmhound.example.com`; a sub-path like `/filmhound` isn't supported.
+- **Built-in:** put a certificate and key in the Data folder (e.g. `certs/cert.pem` and `certs/key.pem`), then set **HTTPS certificate** to `/data/certs/cert.pem` and **HTTPS key** to `/data/certs/key.pem` in the container's advanced settings. Restart after renewing a certificate. With Tailscale, `tailscale cert` creates both files for your server's `ts.net` name.
+
+If you turn on HTTPS, also turn on sign-in in Settings before reaching the app from outside your home.
+
 ## Tips
 
 - Rating things is the biggest lever. The **Rate** page makes it quick.

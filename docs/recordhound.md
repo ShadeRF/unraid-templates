@@ -37,6 +37,15 @@ Plex play counts (including Plexamp) and star ratings are always used. Optionall
 
 Your star ratings count most, then how much you play an artist anywhere, then what you own (adjustable). Recordhound walks Last.fm's similar-artist data out from your strongest artists, scores candidates against a profile of the genres and scenes you return to, and explains each pick with the artists that led to it.
 
+## HTTPS
+
+Either works:
+
+- **Reverse proxy (recommended):** put the app behind Nginx Proxy Manager, SWAG, Caddy, Traefik, or `tailscale serve`, and let it handle certificates. Proxies on your own network are trusted automatically, so the app knows it's on HTTPS (sign-in cookies are then marked secure). Serve it at the root of a domain or subdomain, e.g. `https://recordhound.example.com`; a sub-path like `/recordhound` isn't supported.
+- **Built-in:** put a certificate and key in the Data folder (e.g. `certs/cert.pem` and `certs/key.pem`), then set **HTTPS certificate** to `/data/certs/cert.pem` and **HTTPS key** to `/data/certs/key.pem` in the container's advanced settings. Restart after renewing a certificate. With Tailscale, `tailscale cert` creates both files for your server's `ts.net` name.
+
+If you turn on HTTPS, also turn on sign-in in Settings before reaching the app from outside your home.
+
 ## Tips
 
 - Raise *Minimum Last.fm listeners* in Settings for better-known picks, or lower it and use **Deep cuts** for obscure ones.

@@ -1,0 +1,39 @@
+<p align="center"><img src="../icons/filmhound.png" width="96" alt=""><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="../icons/filmhound-wordmark.svg"><img src="../icons/filmhound-wordmark-light-bg.svg" height="60" alt="Filmhound"></picture></p>
+
+Movie and TV recommendations built from your Plex library and watch history. Browse picks, see why each one was picked, and send what you want to Radarr, Sonarr or Seerr. Nothing is requested automatically.
+
+## What you need
+
+- A Plex server and its token
+- A free TMDB API key ([themoviedb.org/settings/api](https://www.themoviedb.org/settings/api))
+- Optional: Seerr (Overseerr/Jellyseerr), Radarr, Sonarr, a Letterboxd account, a Trakt account
+
+## Setup
+
+1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8788`).
+2. Settings opens on first start. Enter your Plex URL and token, and your TMDB key. Use **Test** on each, then **Save**.
+3. The first sync reads your library and looks up every title on TMDB. A few thousand titles take a few minutes; after that, syncs are quick and run nightly.
+
+**Finding your Plex token:** Plex Web → any movie → ⋯ → Get Info → View XML. The token is the `X-Plex-Token=` value in the page address.
+
+## What's in it
+
+- **For You**: rows like *Because you watched…*, *Because you have…*, themed rows, hidden gems, your watchlist, *Finish what you started* (missing films from collections and directors you own) and *Coming soon* from people you like.
+- **All Picks**: every pick, endlessly, with filters for genres, years, rating, runtime, language, network and your streaming services.
+- **Your Library**: what you own but haven't watched, ranked for you. Send the top 50 to a Plex collection.
+- **Rate**: rate what you've watched, one at a time. Ratings on titles in Plex are saved to Plex.
+- **Title pages**: trailer, where to stream, cast and crew, and why it was picked. Add to Radarr or Sonarr, request through Seerr, save to your watchlist, or open *More like this*.
+- **Search** any movie, show or person.
+- **History from elsewhere**: Letterboxd (export upload plus your diary feed) and Trakt, optionally copied into Plex ratings.
+- **Don't learn from**: keep kids' movies or someone else's shows in Plex without them shaping your picks.
+
+## How it picks
+
+Your ratings count most, then what you've watched, then what you own (adjustable). Each title in your library points to others through TMDB's recommendations; Filmhound adds a taste profile of the directors, writers, cast, keywords, genres, decades and franchises you return to, plus IMDb ratings for quality.
+
+## Tips
+
+- Rating things is the biggest lever. The **Rate** page makes it quick.
+- Too many obscure picks? Raise *Minimum TMDB votes* in Settings. Too mainstream? Lower it.
+- Your data is in the Data folder (`filmhound.db`, `settings.json`). Delete both to start fresh.

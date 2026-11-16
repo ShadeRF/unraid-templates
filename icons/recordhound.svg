@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#211c17"/><stop offset="1" stop-color="#0e0d0c"/>
+    </linearGradient>
+    <linearGradient id="tan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e7a24a"/><stop offset="1" stop-color="#c9772a"/>
+    </linearGradient>
+    <linearGradient id="ear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a4c22"/><stop offset="1" stop-color="#5e3016"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6cf7a"/><stop offset="1" stop-color="#d99a2b"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a63"/><stop offset="1" stop-color="#d9452f"/></linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a332d"/><stop offset="1" stop-color="#1f1a16"/></linearGradient>
+    <radialGradient id="vinyl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#1b1816"/><stop offset=".97" stop-color="#0b0a09"/><stop offset="1" stop-color="#2a2420"/></radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- record behind -->
+  <circle cx="256" cy="262" r="228" fill="url(#vinyl)"/><circle cx="256" cy="262" r="120" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.35"/><circle cx="256" cy="262" r="127" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.50"/><circle cx="256" cy="262" r="134" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.65"/><circle cx="256" cy="262" r="141" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.35"/><circle cx="256" cy="262" r="148" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.50"/><circle cx="256" cy="262" r="155" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.65"/><circle cx="256" cy="262" r="162" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.35"/><circle cx="256" cy="262" r="169" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.50"/><circle cx="256" cy="262" r="176" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.65"/><circle cx="256" cy="262" r="183" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.35"/><circle cx="256" cy="262" r="190" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.50"/><circle cx="256" cy="262" r="197" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.65"/><circle cx="256" cy="262" r="204" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.35"/><circle cx="256" cy="262" r="211" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.50"/><circle cx="256" cy="262" r="218" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.65"/><circle cx="256" cy="262" r="225" fill="none" stroke="#2b2622" stroke-width="1.6" opacity="0.35"/>
+  <path d="M120 120 A 196 196 0 0 1 300 70" stroke="#ffffff" stroke-opacity=".07" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <!-- ears -->
+  <path d="M172 140 C 112 146, 86 230, 98 318 C 106 368, 150 378, 170 346 C 186 318, 182 236, 196 168 Z" fill="url(#ear)"/>
+  <path d="M340 140 C 400 146, 426 230, 414 318 C 406 368, 362 378, 342 346 C 326 318, 330 236, 316 168 Z" fill="url(#ear)"/>
+  <!-- head -->
+  <path d="M256 112 C 330 112, 366 160, 366 220 C 366 262, 352 290, 336 312 L 176 312 C 160 290, 146 262, 146 220 C 146 160, 182 112, 256 112 Z" fill="url(#tan)"/>
+  <!-- white blaze + muzzle -->
+  <path d="M256 128 C 244 150, 238 190, 236 232 L 276 232 C 274 190, 268 150, 256 128 Z" fill="#f4ede2"/>
+  <path d="M256 222 C 200 222, 168 262, 172 304 C 176 352, 214 380, 256 380 C 298 380, 336 352, 340 304 C 344 262, 312 222, 256 222 Z" fill="#f4ede2"/>
+  <!-- eyes -->
+  <ellipse cx="206" cy="212" rx="15" ry="17" fill="#1c120b"/>
+  <ellipse cx="306" cy="212" rx="15" ry="17" fill="#1c120b"/>
+  <circle cx="211" cy="206" r="5" fill="#fff"/>
+  <circle cx="311" cy="206" r="5" fill="#fff"/>
+  <!-- brows -->
+  <path d="M188 186 Q 206 176 224 184" stroke="#8a4f22" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M288 184 Q 306 176 324 186" stroke="#8a4f22" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- nose -->
+  <path d="M230 268 C 230 252, 282 252, 282 268 C 282 286, 266 296, 256 296 C 246 296, 230 286, 230 268 Z" fill="#1c120b"/>
+  <ellipse cx="248" cy="264" rx="8" ry="4" fill="#5a4636"/>
+  <!-- mouth -->
+  <path d="M256 296 L 256 318 M 256 318 Q 238 336 222 324 M 256 318 Q 274 336 290 324" stroke="#3a2a1e" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- collar with record tag -->
+  <path d="M150 382 Q 256 412 362 382 L 362 418 Q 256 448 150 418 Z" fill="url(#red)"/>
+  <circle cx="256" cy="446" r="30" fill="#141210" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="256" cy="446" r="21" fill="none" stroke="#2f2925" stroke-width="2"/>
+  <circle cx="256" cy="446" r="10" fill="url(#red)"/><circle cx="256" cy="446" r="2.6" fill="#141210"/>
+  <!-- headphones -->
+  <path d="M126 206 C 120 118, 180 76, 256 76 C 332 76, 392 118, 386 206" stroke="url(#band)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M140 186 C 138 118, 190 92, 256 92 C 322 92, 374 118, 372 186" stroke="url(#red)" stroke-width="5" fill="none" stroke-linecap="round" opacity=".9"/>
+  <rect x="100" y="160" width="58" height="96" rx="26" fill="url(#band)"/>
+  <rect x="354" y="160" width="58" height="96" rx="26" fill="url(#band)"/>
+  <rect x="140" y="172" width="22" height="72" rx="10" fill="url(#red)"/>
+  <rect x="350" y="172" width="22" height="72" rx="10" fill="url(#red)"/>
+</svg>

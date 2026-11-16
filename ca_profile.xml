@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<CommunityApplications>
+  <Profile>Self-hosted recommendation apps for Plex. Filmhound recommends movies and TV shows, Recordhound recommends music, both from your own library and history, with a reason for every pick. Questions and bug reports go to GitHub issues.</Profile>
+  <Icon>https://raw.githubusercontent.com/ShadeRF/unraid-templates/main/icon.svg</Icon>
+  <WebPage>https://github.com/ShadeRF/unraid-templates</WebPage>
+</CommunityApplications>

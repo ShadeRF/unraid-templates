@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#211c17"/><stop offset="1" stop-color="#0e0d0c"/>
+    </linearGradient>
+    <linearGradient id="tan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e7a24a"/><stop offset="1" stop-color="#c9772a"/>
+    </linearGradient>
+    <linearGradient id="ear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b3a1c"/><stop offset="1" stop-color="#4a2512"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6cf7a"/><stop offset="1" stop-color="#d99a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- spotlight -->
+  <!-- ears -->
+  <path d="M172 140 C 112 146, 86 230, 98 318 C 106 368, 150 378, 170 346 C 186 318, 182 236, 196 168 Z" fill="url(#ear)"/>
+  <path d="M340 140 C 400 146, 426 230, 414 318 C 406 368, 362 378, 342 346 C 326 318, 330 236, 316 168 Z" fill="url(#ear)"/>
+  <!-- head -->
+  <path d="M256 112 C 330 112, 366 160, 366 220 C 366 262, 352 290, 336 312 L 176 312 C 160 290, 146 262, 146 220 C 146 160, 182 112, 256 112 Z" fill="url(#tan)"/>
+  <!-- white blaze + muzzle -->
+  <path d="M256 128 C 244 150, 238 190, 236 232 L 276 232 C 274 190, 268 150, 256 128 Z" fill="#f4ede2"/>
+  <path d="M256 222 C 200 222, 168 262, 172 304 C 176 352, 214 380, 256 380 C 298 380, 336 352, 340 304 C 344 262, 312 222, 256 222 Z" fill="#f4ede2"/>
+  <!-- eyes -->
+  <ellipse cx="206" cy="212" rx="15" ry="17" fill="#1c120b"/>
+  <ellipse cx="306" cy="212" rx="15" ry="17" fill="#1c120b"/>
+  <circle cx="211" cy="206" r="5" fill="#fff"/>
+  <circle cx="311" cy="206" r="5" fill="#fff"/>
+  <!-- brows -->
+  <path d="M188 186 Q 206 176 224 184" stroke="#8a4f22" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M288 184 Q 306 176 324 186" stroke="#8a4f22" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- nose -->
+  <path d="M230 268 C 230 252, 282 252, 282 268 C 282 286, 266 296, 256 296 C 246 296, 230 286, 230 268 Z" fill="#1c120b"/>
+  <ellipse cx="248" cy="264" rx="8" ry="4" fill="#5a4636"/>
+  <!-- mouth -->
+  <path d="M256 296 L 256 318 M 256 318 Q 238 336 222 324 M 256 318 Q 274 336 290 324" stroke="#3a2a1e" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- film-strip collar -->
+  <path d="M150 382 Q 256 412 362 382 L 362 424 Q 256 454 150 424 Z" fill="url(#gold)"/>
+  <g fill="#1a1510"><rect x="164" y="397.4" width="14" height="8" rx="2"/><rect x="164" y="417.4" width="14" height="8" rx="2"/><rect x="192" y="402.7" width="14" height="8" rx="2"/><rect x="192" y="422.7" width="14" height="8" rx="2"/><rect x="220" y="405.9" width="14" height="8" rx="2"/><rect x="220" y="425.9" width="14" height="8" rx="2"/><rect x="248" y="407.0" width="14" height="8" rx="2"/><rect x="248" y="427.0" width="14" height="8" rx="2"/><rect x="276" y="406.0" width="14" height="8" rx="2"/><rect x="276" y="426.0" width="14" height="8" rx="2"/><rect x="304" y="403.0" width="14" height="8" rx="2"/><rect x="304" y="423.0" width="14" height="8" rx="2"/><rect x="332" y="397.8" width="14" height="8" rx="2"/><rect x="332" y="417.8" width="14" height="8" rx="2"/></g>
+</svg>

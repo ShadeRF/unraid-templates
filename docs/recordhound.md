@@ -16,8 +16,9 @@ Music recommendations built from your Plex library and listening history. Browse
 
 ## What's in it
 
-- **For You**: top picks, *Because you play…*, genre rows, deep cuts, new releases from artists you love, and albums you're missing.
+- **For You**: a *This week* summary, top picks (reshuffled weekly), *New for you this week*, *Because you play…*, genre rows, deep cuts, new releases from artists you love (including announced albums), albums you're missing, and albums you own but never played.
 - **All Picks**: every pick, endlessly, with genre include/exclude and filters for how well known an artist is.
+- **Your Library**: albums you own but have never played, ranked for you with a reason for each. One click puts the top ones in a Plex playlist for Plexamp.
 - **You Stream**: artists you play a lot on Last.fm, ListenBrainz or Spotify but don't own. Send them to Lidarr from here.
 - **Artist pages**: 30-second previews, why it was picked, bio, albums (owned ones marked), similar artists, and links to Spotify, Apple Music, Bandcamp and more.
 - **Lidarr**: add artists with your quality and metadata profiles and choose what to monitor.
@@ -34,7 +35,7 @@ Plex play counts (including Plexamp) and star ratings are always used. Optionall
 
 ## How it picks
 
-Your star ratings count most, then how much you play an artist anywhere, then what you own (adjustable). Recordhound walks similar-artist data out from your strongest artists, scores candidates against a profile of the genres and scenes you return to, and explains each pick with the artists that led to it.
+Your star ratings count most, then how much you play an artist anywhere, then what you own (adjustable). Artists you've played in the last six months get extra pull (adjustable under *What you've played lately*). Recordhound walks similar-artist data out from your strongest artists, scores candidates against a profile of the genres and scenes you return to, and explains each pick with the artists that led to it.
 
 ### Where artist data comes from
 

@@ -5,7 +5,7 @@ Self-hosted recommendation apps for Plex. Both build picks from **your own libra
 | | | |
 |---|---|---|
 | <img src="icons/filmhound.png" width="72"> | **[Filmhound](docs/filmhound.md)** | Movies and TV. Works with Seerr, Radarr, Sonarr, Letterboxd and Trakt. Port 8788. |
-| <img src="icons/recordhound.png" width="72"> | **[Recordhound](docs/recordhound.md)** | Music. Works with Last.fm, ListenBrainz, Spotify and Lidarr. Port 8789. |
+| <img src="icons/recordhound.png" width="72"> | **[Recordhound](docs/recordhound.md)** | Music. Works with ListenBrainz, Spotify, Lidarr and Last.fm. Port 8789. |
 
 ## Install
 

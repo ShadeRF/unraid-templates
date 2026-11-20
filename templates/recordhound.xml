@@ -12,15 +12,15 @@
   <ReadMe>https://github.com/ShadeRF/unraid-templates/blob/main/docs/recordhound.md</ReadMe>
   <Overview>Music recommendations built from your own Plex library and listening history. A list to browse, never automatic downloads.&#xD;
 &#xD;
-Learns from Plex (Plexamp play counts and star ratings), Last.fm, ListenBrainz and Spotify, then finds new artists through Last.fm's similar-artist data, with a clear reason for every pick. Shows artists you stream but don't own, albums missing from artists you collect, and new releases from artists you love. Artist pages have 30-second previews, discographies and links to Spotify, Apple Music and Bandcamp. Send artists to Lidarr with your quality and metadata profiles.&#xD;
+Learns from Plex (Plexamp play counts and star ratings), ListenBrainz, Spotify and Last.fm, then finds new artists through similar-artist data from ListenBrainz and Deezer (or Last.fm with a Pro key), with a clear reason for every pick. Shows artists you stream but don't own, albums missing from artists you collect, and new releases from artists you love. Artist pages have 30-second previews, discographies and links to Spotify, Apple Music and Bandcamp. Send artists to Lidarr with your quality and metadata profiles.&#xD;
 &#xD;
-Needs a Plex server with a music library and a free Last.fm API key. Everything is set up on the Settings page after the first start.</Overview>
+Needs a Plex server with a music library. No API keys required. Everything is set up on the Settings page after the first start.</Overview>
   <Category>MediaApp:Music MediaServer:Music</Category>
   <WebUI>http://[IP]:[PORT:8789]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ShadeRF/unraid-templates/main/templates/recordhound.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ShadeRF/unraid-templates/main/icons/recordhound.png</Icon>
-  <ExtraSearchTerms>recommendations discovery music plex plexamp lastfm last.fm listenbrainz spotify lidarr artists albums</ExtraSearchTerms>
-  <Requires>A Plex Media Server with a music library and a free Last.fm API key (last.fm/api/account/create). Last.fm scrobbles, ListenBrainz, Spotify and Lidarr are optional.</Requires>
+  <ExtraSearchTerms>recommendations discovery music plex plexamp lastfm last.fm listenbrainz musicbrainz deezer spotify lidarr artists albums</ExtraSearchTerms>
+  <Requires>A Plex Media Server with a music library. ListenBrainz, Spotify, Lidarr and Last.fm (needs Last.fm Pro from Dec 1, 2026) are optional.</Requires>
   <Config Name="Web UI port" Target="8789" Default="8789" Mode="tcp" Description="Port for the web interface. If you change it and use Spotify, set the same port in your Spotify app's redirect URI." Type="Port" Display="always" Required="true" Mask="false">8789</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/recordhound" Mode="rw" Description="Database, cache and settings." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/recordhound</Config>
   <Config Name="Time zone" Target="TZ" Default="America/New_York" Mode="" Description="Used for the nightly sync time." Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>

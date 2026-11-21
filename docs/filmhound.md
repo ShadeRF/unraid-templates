@@ -11,6 +11,9 @@ Movie and TV recommendations built from your Plex library and watch history. Bro
 
 ## Setup
 
+When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch later by editing the container and changing the tag at the end of Repository.
+
+
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8788`).
 2. Settings opens on first start. Enter your Plex URL and token, and your TMDB key. Use **Test** on each, then **Save**.
 3. The first sync reads your library and looks up every title on TMDB. A few thousand titles take a few minutes; after that, syncs are quick and run nightly.

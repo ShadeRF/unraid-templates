@@ -11,7 +11,7 @@ Movie and TV recommendations built from your Plex library and watch history. Bro
 
 ## Setup
 
-When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch later by editing the container and changing the tag at the end of Repository.
+When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/filmhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.10.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
 
 
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8788`).
@@ -28,7 +28,7 @@ When installing, Community Apps asks which version you want: **Latest** (stable 
 - **Rate**: rate what you've watched, one at a time. Ratings on titles in Plex are saved to Plex.
 - **Title pages**: trailer, where to stream, cast and crew, and why it was picked. Add to Radarr or Sonarr, request through Seerr, save to your watchlist, or open *More like this*.
 - **Search** any movie, show or person.
-- **History from elsewhere**: Letterboxd (export upload plus your diary feed) and Trakt, optionally copied into Plex ratings.
+- **History from elsewhere**: Letterboxd and Trakt, optionally copied into Plex ratings. For Letterboxd, upload your export once (letterboxd.com → Settings → Data → Export your data) to bring in your full history and every rating. Your username alone only reads your diary feed, which holds just your latest ~50 entries; it keeps things current after the export.
 - **Don't learn from**: keep kids' movies or someone else's shows in Plex without them shaping your picks.
 
 ## How it picks

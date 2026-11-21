@@ -10,7 +10,7 @@ Music recommendations built from your Plex library and listening history. Browse
 
 ## Setup
 
-When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch later by editing the container and changing the tag at the end of Repository.
+When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/recordhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.11.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
 
 
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8789`).

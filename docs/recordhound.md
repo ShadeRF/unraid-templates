@@ -10,6 +10,9 @@ Music recommendations built from your Plex library and listening history. Browse
 
 ## Setup
 
+When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch later by editing the container and changing the tag at the end of Repository.
+
+
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8789`).
 2. Settings opens on first start. Enter your Plex URL and token, use **Test**, then **Save**. Everything else is optional.
 3. The first sync looks up every artist and can take 20 minutes or more, since MusicBrainz allows one lookup a second. Lookups are cached for a month, so later syncs are quick. Syncs run nightly.

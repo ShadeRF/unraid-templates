@@ -2,6 +2,14 @@
 <Container version="2">
   <Name>Filmhound</Name>
   <Repository>ghcr.io/shaderf/filmhound:latest</Repository>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>Stable releases (recommended)</TagDescription>
+  </Branch>
+  <Branch>
+    <Tag>nightly</Tag>
+    <TagDescription>Built every night from the newest code: new features first, occasional bugs</TagDescription>
+  </Branch>
   <Registry>https://ghcr.io</Registry>
   <Network>bridge</Network>
   <MyIP/>

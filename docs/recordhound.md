@@ -10,7 +10,7 @@ Music recommendations built from your Plex library and listening history. Browse
 
 ## Setup
 
-When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/recordhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.12.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
+When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/recordhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.13.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
 
 
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8789`).
@@ -23,6 +23,7 @@ When installing, Community Apps asks which version you want: **Latest** (stable 
 - **All Picks**: every pick, endlessly, with genre include/exclude and filters for how well known an artist is.
 - **Your Library**: albums you own but have never played, ranked for you with a reason for each. One click puts the top ones in a Plex playlist for Plexamp.
 - **You Stream**: artists you play a lot on Last.fm, ListenBrainz or Spotify but don't own. Send them to Lidarr from here.
+- **Rate**: rate the artists you play, one at a time. Ratings go to Plex. Rate picks you already know so they stop being suggested.
 - **Artist pages**: 30-second previews, why it was picked, bio, albums (owned ones marked), similar artists, and links to Spotify, Apple Music, Bandcamp and more.
 - **Lidarr**: add artists with your quality and metadata profiles and choose what to monitor.
 - **Save**, **Not interested**, **Already know them**, and **Don't learn from** (for kids' music or someone else's albums).
@@ -34,7 +35,7 @@ Plex play counts (including Plexamp) and star ratings are always used. Optionall
 - **Last.fm**: enter your username. This needs a Last.fm API key, and from December 1, 2026 the key's account needs Last.fm Pro.
 - **ListenBrainz**: enter your username (your profile must be public).
 - **Spotify history file**: request your data at [spotify.com/account/privacy](https://www.spotify.com/account/privacy/) and upload the zip Spotify emails you. No developer account needed.
-- **Spotify account**: keeps your top, followed and saved artists current. Spotify only allows this through a personal developer app: create one at [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard) with the redirect URI `http://127.0.0.1:8789/callback`, paste its Client ID in Settings, click **Connect Spotify**, approve, then paste back the address of the page that fails to load. Spotify requires Premium for developer apps, limits each to 5 users, and ends connections after six months.
+- **Spotify account**: keeps your top, followed and saved artists current. Spotify only allows this through a personal developer app: create one at [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard) with the redirect URI `https://shaderf.github.io/recordhound-auth/`, paste its Client ID in Settings, click **Connect Spotify** and approve. You come straight back. (That address is a small page that sends you back to your own Recordhound; [how it works](https://github.com/ShadeRF/recordhound-auth).) If you connected Spotify before this was possible, see the note in Settings → Spotify. Spotify requires Premium for developer apps, limits each to 5 users, and ends connections after six months.
 
 ## How it picks
 
@@ -57,5 +58,6 @@ If you turn on HTTPS, also turn on sign-in in Settings before reaching the app f
 
 ## Tips
 
+- Rating artists is the biggest lever. The **Rate** page makes it quick.
 - Raise *Minimum Deezer fans* (or *Minimum Last.fm listeners* with a Last.fm key) in Settings for better-known picks, or lower it and use **Deep cuts** for obscure ones.
 - Your data is in the Data folder (`recordhound.db`, `settings.json`). Delete both to start fresh.

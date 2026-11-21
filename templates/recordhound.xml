@@ -29,7 +29,7 @@ Needs a Plex server with a music library. No API keys required. A short walkthro
   <Icon>https://raw.githubusercontent.com/ShadeRF/unraid-templates/main/icons/recordhound.png</Icon>
   <ExtraSearchTerms>recommendations discovery music plex plexamp lastfm last.fm listenbrainz musicbrainz deezer spotify lidarr artists albums</ExtraSearchTerms>
   <Requires>A Plex Media Server with a music library. ListenBrainz, Spotify, Lidarr and Last.fm (needs Last.fm Pro from Dec 1, 2026) are optional.</Requires>
-  <Config Name="Web UI port" Target="8789" Default="8789" Mode="tcp" Description="Port for the web interface. Changing it doesn't affect Spotify: the redirect URI in your Spotify app stays http://127.0.0.1:8789/callback." Type="Port" Display="always" Required="true" Mask="false">8789</Config>
+  <Config Name="Web UI port" Target="8789" Default="8789" Mode="tcp" Description="Port for the web interface. Changing it doesn't affect connecting Spotify." Type="Port" Display="always" Required="true" Mask="false">8789</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/recordhound" Mode="rw" Description="Database, cache and settings." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/recordhound</Config>
   <Config Name="Time zone" Target="TZ" Default="America/New_York" Mode="" Description="Used for the nightly sync time." Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User the app runs as. 99 is Unraid's nobody." Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>

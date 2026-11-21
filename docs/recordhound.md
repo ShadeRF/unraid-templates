@@ -10,11 +10,11 @@ Music recommendations built from your Plex library and listening history. Browse
 
 ## Setup
 
-When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/recordhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.11.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
+When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/recordhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.12.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
 
 
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8789`).
-2. Settings opens on first start. Enter your Plex URL and token, use **Test**, then **Save**. Everything else is optional.
+2. A short setup walkthrough opens on first start. Enter your Plex URL and token and use **Test**. Everything else is optional: the **Getting started** list on the home page points to the extras, and everything can be changed later in Settings.
 3. The first sync looks up every artist and can take 20 minutes or more, since MusicBrainz allows one lookup a second. Lookups are cached for a month, so later syncs are quick. Syncs run nightly.
 
 ## What's in it

@@ -15,7 +15,7 @@ When installing, Community Apps asks which version you want: **Latest** (stable 
 
 
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8788`).
-2. Settings opens on first start. Enter your Plex URL and token, and your TMDB key. Use **Test** on each, then **Save**.
+2. A short setup walkthrough opens on first start. Enter your Plex URL and token, then your TMDB key, and use **Test** on each. Afterwards, the **Getting started** list on the home page points to the optional extras. Everything can be changed later in Settings.
 3. The first sync reads your library and looks up every title on TMDB. A few thousand titles take a few minutes; after that, syncs are quick and run nightly.
 
 **Finding your Plex token:** Plex Web → any movie → ⋯ → Get Info → View XML. The token is the `X-Plex-Token=` value in the page address.

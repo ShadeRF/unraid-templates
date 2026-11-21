@@ -9,7 +9,7 @@ Self-hosted recommendation apps for Plex. Both build picks from **your own libra
 
 ## Install
 
-Search for **Filmhound** or **Recordhound** in Community Apps and click Install. The defaults work: data goes to `/mnt/user/appdata/<app>`, and the apps run as `nobody:users` (99:100) like other Unraid apps. Open the WebUI, and the first start takes you to Settings.
+Search for **Filmhound** or **Recordhound** in Community Apps and click Install. The defaults work: data goes to `/mnt/user/appdata/<app>`, and the apps run as `nobody:users` (99:100) like other Unraid apps. Open the WebUI, and a short walkthrough on the first start gets you connected.
 
 Updates appear in Unraid's Docker tab when a new version is released.
 

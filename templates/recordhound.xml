@@ -20,9 +20,9 @@
   <ReadMe>https://github.com/ShadeRF/unraid-templates/blob/main/docs/recordhound.md</ReadMe>
   <Overview>Music recommendations built from your own Plex library and listening history. A list to browse, never automatic downloads.&#xD;
 &#xD;
-Learns from Plex (Plexamp play counts and star ratings), ListenBrainz, Spotify and Last.fm, then finds new artists through similar-artist data from ListenBrainz and Deezer (or Last.fm with a Pro key), with a clear reason for every pick. Shows artists you stream but don't own, albums missing from artists you collect, and new releases from artists you love. Artist pages have 30-second previews, discographies and links to Spotify, Apple Music and Bandcamp. Send artists to Lidarr with your quality and metadata profiles.&#xD;
+Learns from Plex (Plexamp play counts and star ratings), ListenBrainz, Spotify and Last.fm, then finds new artists through similar-artist data from ListenBrainz and Deezer (or Last.fm with a Pro key), with a clear reason for every pick. Shows artists you stream but don't own, albums missing from artists you collect, and new releases from artists you love. Artist pages have 30-second previews, discographies and links to Spotify, Apple Music and Bandcamp. Rate the artists you play, one at a time, and the ratings go to Plex too. Send artists to Lidarr with your quality and metadata profiles.&#xD;
 &#xD;
-Needs a Plex server with a music library. No API keys required. A short walkthrough on the first start sets everything up.</Overview>
+Needs a Plex server with a music library. No API keys required. A short walkthrough on the first start sets everything up. Open source (AGPL-3.0).</Overview>
   <Category>MediaApp:Music MediaServer:Music</Category>
   <WebUI>http://[IP]:[PORT:8789]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ShadeRF/unraid-templates/main/templates/recordhound.xml</TemplateURL>

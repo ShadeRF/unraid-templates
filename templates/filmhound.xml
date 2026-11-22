@@ -20,7 +20,7 @@
   <ReadMe>https://github.com/ShadeRF/unraid-templates/blob/main/docs/filmhound.md</ReadMe>
   <Overview>Movie and TV recommendations built from your own Plex library, ratings and watch history. A list to browse, never automatic downloads.&#xD;
 &#xD;
-Every pick says why ("Because you watched Out of the Past"). Endless scrolling, genre and decade filters, rows by theme, where-to-stream, trailers, actor pages, a watchlist, missing films from collections and directors you own, and upcoming releases from people you like. Send titles to Radarr or Sonarr with your quality profile, or request them through Seerr. Imports Letterboxd and Trakt history and can copy those ratings to Plex.&#xD;
+Every pick says why ("Because you watched Out of the Past"). Endless scrolling, genre and decade filters, rows by theme, where-to-stream, trailers, actor pages, a watchlist, missing films from collections, directors and actors you collect, and upcoming releases that fit your taste. Send titles to Radarr or Sonarr with your quality profile, or request them through Seerr. Imports Letterboxd and Trakt history and can copy those ratings to Plex.&#xD;
 &#xD;
 Needs a Plex server and a free TMDB API key. A short walkthrough on the first start sets everything up. Open source (AGPL-3.0).</Overview>
   <Category>MediaApp:Video MediaServer:Video</Category>

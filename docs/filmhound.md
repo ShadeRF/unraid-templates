@@ -15,25 +15,26 @@ I built Filmhound because the recommendation apps I tried never matched what was
 
 ## Setup
 
-When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/filmhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.10.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
+When installing, Community Apps asks which version you want: **Latest** (stable releases, recommended) or **Nightly** (built every night from the newest code, with new features first and the occasional bug). You can switch any time by editing the container and changing the tag at the end of Repository, for example `ghcr.io/shaderf/filmhound:latest`. Your settings and data carry over. Two more tags exist for special cases: an exact version such as `:0.11.0` to stay on one release or roll back if a release causes trouble, and `:edge`, test builds published while changes are being tried out (expect rough edges).
 
 
 1. Install from Community Apps and open the WebUI (`http://SERVER-IP:8788`).
-2. A short setup walkthrough opens on first start. Enter your Plex URL and token, then your TMDB key, and use **Test** on each. Afterwards, the **Getting started** list on the home page points to the optional extras. Everything can be changed later in Settings.
+2. A short setup walkthrough opens on first start. Enter your Plex URL and token, then your TMDB key, and use **Test connection** on each. For each Plex library, choose **Use**, **Own only** (counts as yours but doesn't shape your picks) or **Ignore**. Afterwards, the **Getting started** list on the home page points to the optional extras. Everything can be changed later in Settings.
 3. The first sync reads your library and looks up every title on TMDB. A few thousand titles take a few minutes; after that, syncs are quick and run nightly.
 
 **Finding your Plex token:** Plex Web → any movie → ⋯ → Get Info → View XML. The token is the `X-Plex-Token=` value in the page address.
 
 ## What's in it
 
-- **For You**: rows like *Because you watched…*, *Because you have…*, themed rows, hidden gems, your watchlist, *Finish what you started* (missing films from collections and directors you own) and *Coming soon* from people you like.
+- **For You**: rows like *Because you watched…*, *Because you have…*, themed rows, hidden gems, your watchlist, *Finish what you started* (missing films from collections, directors and actors you collect) and *Coming soon for you* (unreleased movies and shows that fit your taste).
 - **All Picks**: every pick, endlessly, with filters for genres, years, rating, runtime, language, network and your streaming services.
-- **Your Library**: what you own but haven't watched, ranked for you. Send the top 50 to a Plex collection.
-- **Rate**: rate what you've watched, one at a time. Ratings on titles in Plex are saved to Plex.
-- **Title pages**: trailer, where to stream, cast and crew, and why it was picked. Add to Radarr or Sonarr, request through Seerr, save to your watchlist, or open *More like this*.
+- **Up next**: *Collections* (films missing from collections you own, and from directors and actors you collect, with the nearly complete ones first) and *Coming soon* (unreleased movies and shows that fit your taste).
+- **Your Library**: what you own but haven't watched, ranked for you. Send the top ones to a Plex collection; you choose how many.
+- **Rate**: rate what you've watched, one at a time. Ratings on titles in Plex are saved to Plex. Seen some of your picks? Rate them too, or press K for **Seen it** without a rating.
+- **Title pages**: trailer, where to stream, cast and crew, and why it was picked. Add to Radarr or Sonarr, request through Seerr, save to your watchlist, mark **Seen it**, or open *More like this*.
 - **Search** any movie, show or person.
 - **History from elsewhere**: Letterboxd and Trakt, optionally copied into Plex ratings. For Letterboxd, upload your export once (letterboxd.com → Settings → Data → Export your data) to bring in your full history and every rating. Your username alone only reads your diary feed, which holds just your latest ~50 entries; it keeps things current after the export.
-- **Don't learn from**: keep kids' movies or someone else's shows in Plex without them shaping your picks.
+- **Don't learn from**: keep kids' movies, someone else's shows or any genre in your library from shaping your picks. Each Plex library can be set to **Use**, **Own only** or **Ignore** on the Plex card in Settings.
 
 ## How it picks
 

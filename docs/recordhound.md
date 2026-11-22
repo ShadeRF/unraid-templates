@@ -3,14 +3,14 @@
 
 Music recommendations built from your Plex library and listening history. Browse new artists, see why each one was picked, preview them, and send what you want to Lidarr. Nothing is downloaded automatically.
 
-I built Recordhound because the recommendation apps I tried never matched what was in my library or what I listen to. It starts from your own library, explains every pick, and lets you tune how it decides.
+I built Recordhound because I listen both to my own library and on streaming services, and no recommendation app I tried took both into account. It combines your Plex library with your listening elsewhere, explains every pick, and lets you tune how it decides.
 
 <p align="center"><img src="../screenshots/recordhound-for-you.jpg" alt="For You: top picks, each with the artists that led to it"></p>
 
 ## What you need
 
 - A Plex server with a music library, and its token
-- Optional: a ListenBrainz account with your scrobbles, Spotify, Lidarr, and a Last.fm API key (see [Last.fm](#lastfm))
+- Optional: a ListenBrainz account with your scrobbles (free, and works with most streaming services), Spotify, Lidarr, and a Last.fm API key (see [Last.fm](#lastfm))
 
 ## Setup
 
@@ -26,7 +26,7 @@ When installing, Community Apps asks which version you want: **Latest** (stable 
 - **For You**: a *This week* summary, top picks (reshuffled weekly), *New for you this week*, *Because you play…*, genre rows, deep cuts, new releases from artists you love (including announced albums), albums you're missing, and albums you own but never played.
 - **All Picks**: every pick, endlessly, with genre include/exclude and filters for how well known an artist is.
 - **Your Library**: albums you own but have never played, ranked for you with a reason for each. One click puts the top ones in a Plex playlist for Plexamp.
-- **You Stream**: artists you play a lot on Last.fm, ListenBrainz or Spotify but don't own. Send them to Lidarr from here.
+- **You Stream**: artists you play a lot on ListenBrainz, Spotify or Last.fm but don't own. Send them to Lidarr from here.
 - **Rate**: rate the artists you play, one at a time. Ratings go to Plex. Rate picks you already know so they stop being suggested.
 - **Artist pages**: 30-second previews, why it was picked, bio, albums (owned ones marked), similar artists, and links to Spotify, Apple Music, Bandcamp and more.
 - **Lidarr**: add artists with your quality and metadata profiles and choose what to monitor.
@@ -36,10 +36,12 @@ When installing, Community Apps asks which version you want: **Latest** (stable 
 
 Plex play counts (including Plexamp) and star ratings are always used. Optionally add:
 
-- **Last.fm**: enter your username. This needs a Last.fm API key, and from December 1, 2026 the key's account needs Last.fm Pro.
-- **ListenBrainz**: enter your username (your profile must be public).
+- **ListenBrainz** (free): enter your username (your profile must be public). This is also the way in for Apple Music, YouTube Music, Deezer, Tidal and other services; see below.
 - **Spotify history file**: request your data at [spotify.com/account/privacy](https://www.spotify.com/account/privacy/) and upload the zip Spotify emails you. No developer account needed.
 - **Spotify account**: keeps your top, followed and saved artists current. Spotify only allows this through a personal developer app: create one at [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard) with the redirect URI `https://shaderf.github.io/recordhound-auth/`, paste its Client ID in Settings, click **Connect Spotify** and approve. You come straight back. (That address is a small page that sends you back to your own Recordhound; [how it works](https://github.com/ShadeRF/recordhound-auth).) If you connected Spotify before this was possible, see the note in Settings → Spotify. Spotify requires Premium for developer apps, limits each to 5 users, and ends connections after six months.
+- **Last.fm**: enter your username. This needs a Last.fm API key, and from December 1, 2026 the key's account needs Last.fm Pro.
+
+**Listening on other services:** Recordhound doesn't connect to Apple Music, YouTube Music, Deezer or Tidal directly, but ListenBrainz can collect your plays from them for free. The [Web Scrobbler](https://web-scrobbler.com) browser extension sends what you play in a service's web player (not its phone or desktop app), and [multi-scrobbler](https://github.com/FoxxMD/multi-scrobbler) runs on your server and collects plays from several services and players. Then add your ListenBrainz username in Settings. Plays count from the day you set this up.
 
 ## How it picks
 

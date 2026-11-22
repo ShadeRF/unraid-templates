@@ -49,3 +49,7 @@ If you turn on HTTPS, also turn on sign-in in Settings before reaching the app f
 - Rating things is the biggest lever. The **Rate** page makes it quick.
 - Too many obscure picks? Raise *Minimum TMDB votes* in Settings. Too mainstream? Lower it.
 - Your data is in the Data folder (`filmhound.db`, `settings.json`). Delete both to start fresh.
+
+## Source code and help
+
+Filmhound is open source under the AGPL-3.0: [github.com/ShadeRF/filmhound](https://github.com/ShadeRF/filmhound). Report problems or suggest ideas in its [issues](https://github.com/ShadeRF/filmhound/issues).

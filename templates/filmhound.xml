@@ -15,8 +15,8 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/ShadeRF/unraid-templates/issues</Support>
-  <Project>https://github.com/ShadeRF/unraid-templates#filmhound</Project>
+  <Support>https://github.com/ShadeRF/filmhound/issues</Support>
+  <Project>https://github.com/ShadeRF/filmhound</Project>
   <ReadMe>https://github.com/ShadeRF/unraid-templates/blob/main/docs/filmhound.md</ReadMe>
   <Overview>Movie and TV recommendations built from your own Plex library, ratings and watch history. A list to browse, never automatic downloads.&#xD;
 &#xD;

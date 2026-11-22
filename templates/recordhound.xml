@@ -15,8 +15,8 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/ShadeRF/unraid-templates/issues</Support>
-  <Project>https://github.com/ShadeRF/unraid-templates#recordhound</Project>
+  <Support>https://github.com/ShadeRF/recordhound/issues</Support>
+  <Project>https://github.com/ShadeRF/recordhound</Project>
   <ReadMe>https://github.com/ShadeRF/unraid-templates/blob/main/docs/recordhound.md</ReadMe>
   <Overview>Music recommendations built from your own Plex library and listening history. A list to browse, never automatic downloads.&#xD;
 &#xD;

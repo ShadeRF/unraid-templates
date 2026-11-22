@@ -61,3 +61,7 @@ If you turn on HTTPS, also turn on sign-in in Settings before reaching the app f
 - Rating artists is the biggest lever. The **Rate** page makes it quick.
 - Raise *Minimum Deezer fans* (or *Minimum Last.fm listeners* with a Last.fm key) in Settings for better-known picks, or lower it and use **Deep cuts** for obscure ones.
 - Your data is in the Data folder (`recordhound.db`, `settings.json`). Delete both to start fresh.
+
+## Source code and help
+
+Recordhound is open source under the AGPL-3.0: [github.com/ShadeRF/recordhound](https://github.com/ShadeRF/recordhound). Report problems or suggest ideas in its [issues](https://github.com/ShadeRF/recordhound/issues).

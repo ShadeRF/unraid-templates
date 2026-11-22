@@ -23,7 +23,8 @@ For problems with an app, open an issue in its own repository: [Filmhound](https
 
 - `templates/`: the Community Apps templates
 - `icons/`: app icons
+- `screenshots/`: screenshots used in the guides and the apps' READMEs
 - `docs/`: user guides
 - `ca_profile.xml`: the profile shown in Community Apps
 
-The templates and docs here are MIT licensed. The icons and wordmarks in `icons/` are not: the Filmhound and Recordhound names and logos may only be used to refer to the official apps (see [icons/README.md](icons/README.md)). The apps are distributed as container images at `ghcr.io/shaderf/filmhound` and `ghcr.io/shaderf/recordhound`.
+The templates and docs here are MIT licensed. The icons and wordmarks in `icons/` and the screenshots in `screenshots/` are not: the Filmhound and Recordhound names and logos may only be used to refer to the official apps (see [icons/README.md](icons/README.md)). The apps are distributed as container images at `ghcr.io/shaderf/filmhound` and `ghcr.io/shaderf/recordhound`.

@@ -3,6 +3,10 @@
 
 Music recommendations built from your Plex library and listening history. Browse new artists, see why each one was picked, preview them, and send what you want to Lidarr. Nothing is downloaded automatically.
 
+I built Recordhound because the recommendation apps I tried never matched what was in my library or what I listen to. It starts from your own library, explains every pick, and lets you tune how it decides.
+
+<p align="center"><img src="../screenshots/recordhound-for-you.jpg" alt="For You: top picks, each with the artists that led to it"></p>
+
 ## What you need
 
 - A Plex server with a music library, and its token
@@ -61,6 +65,8 @@ If you turn on HTTPS, also turn on sign-in in Settings before reaching the app f
 - Rating artists is the biggest lever. The **Rate** page makes it quick.
 - Raise *Minimum Deezer fans* (or *Minimum Last.fm listeners* with a Last.fm key) in Settings for better-known picks, or lower it and use **Deep cuts** for obscure ones.
 - Your data is in the Data folder (`recordhound.db`, `settings.json`). Delete both to start fresh.
+
+*Filmhound and Recordhound are named for Daisy, my beagle and the hound of my life.*
 
 ## Source code and help
 

@@ -3,6 +3,10 @@
 
 Movie and TV recommendations built from your Plex library and watch history. Browse picks, see why each one was picked, and send what you want to Radarr, Sonarr or Seerr. Nothing is requested automatically.
 
+I built Filmhound because the recommendation apps I tried never matched what was in my library or what I was watching. It starts from your own library, explains every pick, and lets you tune how it decides.
+
+<p align="center"><img src="../screenshots/filmhound-for-you.jpg" alt="For You: top picks with the titles that led to each"></p>
+
 ## What you need
 
 - A Plex server and its token
@@ -49,6 +53,8 @@ If you turn on HTTPS, also turn on sign-in in Settings before reaching the app f
 - Rating things is the biggest lever. The **Rate** page makes it quick.
 - Too many obscure picks? Raise *Minimum TMDB votes* in Settings. Too mainstream? Lower it.
 - Your data is in the Data folder (`filmhound.db`, `settings.json`). Delete both to start fresh.
+
+*Filmhound and Recordhound are named for Daisy, my beagle and the hound of my life.*
 
 ## Source code and help
 
